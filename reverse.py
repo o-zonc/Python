@@ -1,9 +1,19 @@
-s=list(input('대상 문자열을 입력하세요: '))
-t=list(input('삭제할 문자열을 입력하세요: '))
-result=[]
-for i in s:
-  if i not in t:
-    result.append(i)
-result.reverse()
-result=''.join(result)
-print('결과 문자열은 {0}입니다.'.format(result))
+answer_A = 'OXOXO'
+answer_B = 'OOXXX'
+
+answer = input('Answer: ')
+answer = answer.upper()
+count_alice = 0
+count_bob = 0
+for i in range(5):
+  if answer[i] == answer_A[i]:
+    count_alice += i
+  if answer[i] == answer_B[i]:
+    count_bob += i
+
+if count_alice > count_bob:
+  print('Alice')
+elif count_alice < count_bob:
+  print('bob')
+else:
+  print('same')
