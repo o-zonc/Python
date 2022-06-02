@@ -1,0 +1,5 @@
+dokkabi:x:524:500:Chris:/home/dokkabi:/bin/csh
+sky1004:x:525:500:James:/home/sky1004:/bin/bash
+angel:x:526:500:Rick:/home/angel:/bin/bash
+sunny:x:527:500:Albert:/home/sunny:/bin/bash
+minam:x:528:500:John:/home/minam:/bin/bash

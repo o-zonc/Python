@@ -1,24 +1,19 @@
-N = int(input('input N:'))
-M = int(input('input M:'))
+import random
 
-if N > M:
-  i = N
-else:
-  i = M
-
-while i !=1:
-  if N % i == 0 and M % i == 0:
-    break
-  else:
-    i = i-1
-
-temp = []
-for j in range(1,i+1):
-  if i % j == 0:
-    temp.append(j)
-
-s = 0
-for k in range(len(temp)):
-  s = s + temp[k]
-
-print(s)
+while True:
+    n = input('seed:')
+    random.seed(n)
+    count = 0
+    dice = [0, 0, 0, 0, 0, 0]
+    while count <= 100:
+        die = random.randint(0,5)
+        print(die)
+        dice[die] += 1
+        count += 1
+    temp = dice
+    temp.sort()
+    common = max(temp)
+    print(dice)
+    for i in range(6):
+        if common == dice[i]:
+            print(i + 1)
