@@ -1,0 +1,8 @@
+a = int(input("Enter a number: "))
+b = int(input("Enter a number, again: "))
+print("this is logical sum")
+print(bin(a&b))
+print("this is logical product")
+print(bin(a|b))
+print("and this is exclusive logical sum")
+print(bin(a^b))
