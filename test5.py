@@ -7,9 +7,6 @@
 while True:
     test_score = int(input('Enter your score > '))
 
-    if test_score == 0:
-        break
-
     if test_score >= 82:
         grade = 'A+'
         print(grade, end=' ')
@@ -37,4 +34,6 @@ while True:
     if test_score <= 55:
         grade = 'F'
         print(grade, end=' ')
+    if test_score == 0:
+        break
     print('')
